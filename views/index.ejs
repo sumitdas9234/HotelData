@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <% let size = data.length; %>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 hotel-list">
+                <% for(let i=1; i < size; i++) { %>
+                <div class="row hotel">
+                    <div class="col-lg-6 hotel-data">
+                        <h3>
+                            <%= data[i].name %>
+                        </h3>
+                        <p>Price: <span> &#8377;
+                                <%= data[i].price %></span></p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                            a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    <div class="col-lg-6 hotel-preview">
+                        <img src="/images/342.jpg" alt="hotel" height="180" width="150">
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.hotel-list {
+    margin: 50px 50px;
+}
+
+.hotel {
+    font-family: 'Open Sans', monospace;
+    box-sizing: border-box;
+}
+
+.hotel-preview img {
+    padding-top: 25px;
+}
+
+.navigator {
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 12px auto;
+}
+
+.navigator a:hover {
+    text-decoration: none;
+    color: #333333;
+}
+
+.text-emphasis {
+    font-weight: bold;
+}
